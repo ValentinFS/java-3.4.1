@@ -2,9 +2,9 @@ package ru.netology;
 
 public class MovieManager {
     private MovieItems[] items = new MovieItems[0];
-    int maxLength = 10;
+    private int maxLength = 10;
     private MovieItems[] result = new MovieItems[maxLength];
-    int resultLength;
+    private int resultLength;
 
     public MovieManager() {
     }
@@ -36,15 +36,6 @@ public class MovieManager {
         items = tmp;
     }
 
-    public void setItems(int itemsLength) {
-        this.items = new MovieItems[itemsLength];
-    }
-
-    public int getItems() {
-        return items.length;
-    }
-
-
     public MovieItems[] getAll() {
 
 
@@ -66,10 +57,6 @@ public class MovieManager {
         }
 
         return result;
-    }
-
-    public int getResultLength() {
-        return result.length;
     }
 
 }
