@@ -14,10 +14,6 @@ public class AfishaRepository {
         items = tmp;
     }
 
-    public int getItemsLength() {
-        return items.length;
-    }
-
     public MovieItems[] findAll() {
         return items;
     }
@@ -32,14 +28,6 @@ public class AfishaRepository {
         }
         items = tmp;
         return items;
-    }
-
-    public int getIdNumber() {
-        int idNumber = 0;
-        for (MovieItems item : items) {
-            idNumber = item.getId();
-        }
-        return idNumber;
     }
 
 
@@ -59,10 +47,6 @@ public class AfishaRepository {
             }
         }
         items = tmp;
-    }
-
-    public boolean getResultRemove() {
-        return resultRemove;
     }
 
     public void removeAll() {
