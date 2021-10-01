@@ -4,7 +4,6 @@ public class MovieManager {
     private MovieItems[] items = new MovieItems[0];
     private int maxLength = 10;
     private MovieItems[] result = new MovieItems[maxLength];
-    private int resultLength;
 
     public MovieManager() {
     }
@@ -38,7 +37,7 @@ public class MovieManager {
 
     public MovieItems[] getAll() {
 
-
+        int resultLength;
         if (items.length > maxLength) {
             resultLength = maxLength;
             result = new MovieItems[resultLength];
