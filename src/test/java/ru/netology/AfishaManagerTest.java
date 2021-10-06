@@ -44,13 +44,14 @@ class AfishaManagerTest {
     }
 
     @Test
-    void removeById() {
+    void shouldRemoveById() {
         MovieItems[] returned = {movie1, movie2, movie3};
         doReturn(returned).when(repository).findAll();
         manager.add(movie1);
         manager.add(movie2);
         manager.add(movie3);
-        manager.removeById(2);
+        manager.deleteById(2);
+
         MovieItems[] expected = new MovieItems[]{movie3, movie1};
         MovieItems[] actual = manager.getAll();
         assertArrayEquals(expected, actual);

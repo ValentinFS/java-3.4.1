@@ -21,7 +21,7 @@ public class AfishaManager {
         return result;
     }
 
-    public void removeById(int id) {
+    public void deleteById(int id) {
         repository.removeById(id);
     }
 
